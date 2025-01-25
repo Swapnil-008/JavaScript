@@ -64,10 +64,10 @@ const myObject = {
 
 const programming = ["js", "rb", "py", "java", "cpp"]
 
-for (const key in programming)
-{
-    console.log(programming[key]);
-}
+// for (const key in programming)
+// {
+//     console.log(programming[key]);
+// }
 // if you try to print in array then it will be give you an index as a key of every element of an array
 // js
 // rb
@@ -111,8 +111,3 @@ const myCoding = [
         languageFileName: "py"
     },
 ]
-
-myCoding.forEach( (item) => {
-    
-    console.log(item.languageName);
-} )

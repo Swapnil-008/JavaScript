@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add | Remove</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+
+    //Adding new language
+    function addLanguage(langName)
+    {
+        const parent = document.querySelector(".language")
+        const newLanguage = document.createElement("li")
+        newLanguage.innerHTML = langName
+        parent.appendChild(newLanguage)
+    }
+    addLanguage("Java")
+    addLanguage("Python")
+    //optimize way to add element
+    function addOptiLanguage(langName)
+    {
+        const parent = document.querySelector(".language")
+        const newLanguage = document.createElement("li")
+        const addText = document.createTextNode(langName)
+        newLanguage.appendChild(addText)
+        parent.appendChild(newLanguage)
+    }
+    addOptiLanguage("Typescript")
+
+    //Updating old language with new language
+    function updateLanguage(n, newLang)
+    {
+        const replacableLanguage = document.querySelector(`li:nth-child(${n})`)
+        // replacableLanguage.innerHTML = newLang
+        const newLanguage = document.createElement("li")  // optimize approach
+        newLanguage.textContent = newLang
+        replacableLanguage.replaceWith(newLanguage)
+    }
+    updateLanguage(2, "Cpp")
+
+    //Remove last Language
+    function removeLanguage()
+    {
+        const lang = document.querySelector("li:last-child")
+        lang.remove()
+    }
+    removeLanguage()
+</script>
+</html>

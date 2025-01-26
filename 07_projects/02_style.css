@@ -1,0 +1,55 @@
+body {
+    background-color: #212121;
+    color: #fff;
+}
+
+h1 {
+    background-color: aqua;
+    color: #212121;
+    border: solid 2px #fff;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+}
+
+form {
+    margin-left: 200px;
+}
+
+.input {
+    margin: 20px;
+}
+
+.d-grid {
+    margin-right: 200px;
+}
+
+#results {
+    background-color: antiquewhite;
+    margin-top: 50px;
+    color: #212121;
+    font-weight: 700;
+    margin-left: 370px;
+    height: 50px;
+    width: 400px;
+    text-align: center;
+    line-height: 50px; /* Vertically centers the text inside */
+    border-radius: 10px;
+    border: 2px solid #212121;
+}
+#discription {
+    margin-top: 20px; /* Adds space between result and description */
+    margin-left: 200px;
+    width: 600px;
+    background-color: aqua;
+    color: #1e1b1b;
+    height: auto; /* Adjust to fit content */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#discription p {
+    margin-bottom: 20px; /* Adds spacing between paragraphs */
+}

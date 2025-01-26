@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    //Types of event propogatin
+    //1) Event bubbling 2)Event Capturing
+
+    // Event bubbling -- firstly inner event will be occurred
+    // document.getElementById('owl').addEventListener('click', (e) =>{
+    //     console.log("Owl picture clicked")
+    //     e.stopPropagation()       // this will be stoping the event propogation
+    // }, false)
+
+    // Capturing mode -- firstly outer event will be occurred 
+    // document.getElementById('images').addEventListener('click', (e) =>{
+    //     console.log("Image clicked")
+    // }, false)
+
+    // if we clicked on owl image that time both (images, owl) the events will be occurred so if we have kept the third parameter as a true then first, event of images will be occurred and then event of owl will be occured
+    // and if we kept the parameter as a false then it will be occurred in vise versa, default value of that parameter is false
+    // and if we don't want to give permission of occuring events more that one so that's called event propogation
+
+    // document.getElementById('google').addEventListener('click', (e) => {
+    //     e.preventDefault()   // This method will stop the working of google element
+    //     e.stopPropagation()
+    //     console.log("click on google")
+    // })
+
+    document.querySelector("#images").addEventListener('click', (e) => {
+        if(e.target.tagName === 'IMG')
+        {
+            // e.target will give image so there parent will be li in this example
+            const removeIt = e.target.parentNode
+            removeIt.remove()
+
+            //another way of deleting the li, removeIt.parentNode.childNode(removeIt)
+        }
+    }, false)
+</script>
+</html>

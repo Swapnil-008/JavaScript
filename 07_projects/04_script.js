@@ -1,4 +1,4 @@
-let randomNumber = Math.round(Math.random() * 100 + 1);
+let randomNumber = Math.floor(Math.random() * 100) + 1;
 console.log(randomNumber);
 
 let previousGuesses = [];
@@ -19,14 +19,16 @@ restart.addEventListener("click", reset);
 submitButton.addEventListener("click", () => {
     const guessedNumber = parseInt(text.value);
     text.value = "";
-    if (guessedNumber < 1 || guessedNumber > 100 || isNaN(guessedNumber)) {
+    if (guessedNumber < 1 || guessedNumber > 100 || isNaN(guessedNumber))
+    {
         message.innerHTML = "Invalid number, Enter a valid number between 1 and 100!";
         return;
     }
 
     let isPresent = false;
     previousGuesses.forEach((num) => {
-        if (num === guessedNumber) {
+        if (num === guessedNumber)
+        {
             message.innerHTML = "Wrong guess, This number is already Guessed!";
             isPresent = true;
         }
@@ -58,9 +60,12 @@ submitButton.addEventListener("click", () => {
     if (remainingGuesses === 0)
     {
         message.innerHTML = `Game Over! The correct number was ${randomNumber}.`;
+        text.setAttribute("disabled", "true");
+        return;
     }
 });
-function reset() {
+function reset()
+{
     randomNumber = Math.round(Math.random() * 100 + 1);
     previousGuesses = [];
     remainingGuesses = 10;

@@ -1,0 +1,68 @@
+h1{
+    text-align: center;
+    height: 50px;
+    width: 700px;
+    background-color: rgb(211, 219, 55);
+    line-height: 50px;
+    color: #212121;
+    position:absolute;
+    left: 30%;
+    border-radius: 10px;
+}
+
+#addTask{
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    width: 200px;
+    height: 25px;
+    font-size: 15px;
+}
+
+#add-btn{
+    position: absolute;
+    top: 15%;
+    left: 52%;
+    width: 300px;
+    height: 30px;
+    font-size: 15px;
+}
+#removeTask{
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    width: 200px;
+    height: 25px;
+    font-size: 15px;
+}
+
+#remove-btn{
+    position: absolute;
+    top: 25%;
+    left: 52%;
+    width: 300px;
+    height: 30px;
+    font-size: 15px;
+}
+
+.message{
+    text-align: center;
+    height: 50px;
+    width: 700px;
+    background-color: rgb(56, 156, 238);
+    line-height: 50px;
+    color: #212121;
+    position:absolute;
+    top: 35%;
+    left: 30%;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+#list{
+    position: absolute;
+    top: 43%;
+    left: 33%;
+    font-size: 25px;
+    font-weight: 600;
+}

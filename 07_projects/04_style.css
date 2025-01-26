@@ -1,0 +1,88 @@
+body{
+    cursor: pointer;
+    background-color: #212121;
+    color: #fff;
+}
+#heading{
+    position:fixed;
+    left: 25%;
+    top: 10%;
+    height: 50px;
+    width: 800px;
+    border: solid #fafafa 3px;
+    border-radius: 10px;
+    background-color: rgb(239, 241, 79);
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;
+    color: #212121;
+}
+
+#description{
+    position: absolute;
+    top: 25%;
+    left: 34%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.label{
+    position:absolute;
+    top: 37%;
+    left: 43%;
+    font-size: 35px;
+}
+
+#number{
+    position:absolute;
+    top: 45%;
+    left: 35%;
+    height: 40px;
+    width: 500px;
+    font-size: 25px;
+}
+
+.btn-warning{
+    position:absolute;
+    top: 55%;
+    left: 36%;
+    height: 50px;
+    width: 220px;
+    background-color: yellow;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.btn-warning:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 8px #fff;
+}
+
+#restart{
+    position: absolute;
+    top: 55%;
+    left: 53%;
+}
+
+.wrongGuesses{
+    position: absolute;
+    top: 65%;
+    left: 30%;
+    font-size: 20px;
+}
+
+.remainingGuesses{
+    position:absolute;
+    top: 70%;
+    left: 30%;
+    font-size: 20px;
+}
+
+#message{
+    position: absolute;
+    top: 77%;
+    left: 27%;
+    font-size: 25px;
+    color: skyblue;
+}
+

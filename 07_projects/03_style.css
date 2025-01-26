@@ -1,0 +1,56 @@
+div:hover{
+    box-shadow: 4px 4px 10px #999898;
+}
+#heading{
+    color: #212121;
+    height: 50px;
+    width: 200px;
+    background-color: aqua;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 50px;
+    border-radius: 10px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#clock{
+    height: 50px;
+    width: 200px;
+    background-color: rgb(198, 191, 67);
+    border-radius: 10px;
+    position:fixed;
+    top: 50%;
+    left: 43.5%;
+    text-align:center;
+    line-height: 50px;
+    font-size: 25px;
+    color: #212121;
+    font-weight: 550;
+}
+
+#Timer{
+    height: 50px;
+    width: 200px;
+    background-color: rgb(108, 199, 65);
+    border-radius: 10px;
+    position:fixed;
+    top: 58.5%;
+    left: 43.5%;
+    text-align:center;
+    line-height: 50px;
+    font-size: 25px;
+    color: #212121;
+    font-weight: 550;
+}
+
+div:hover{
+    cursor: pointer;
+}
+
+#restartTimer{
+    margin: 20px;
+}

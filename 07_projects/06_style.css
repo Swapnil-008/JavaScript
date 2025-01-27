@@ -1,0 +1,27 @@
+#insert{
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    background-color: rgb(40, 71, 98);
+    height: 80px;
+    width: 325px;
+}
+table {
+    width: 100%;
+}
+th, td {
+    border: 2px solid white;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: rgb(50, 90, 120);
+}
+.key{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    font-size: 25px;
+    background-color: rgb(40, 71, 98);
+    padding: 10px;
+}

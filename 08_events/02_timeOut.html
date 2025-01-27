@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const changeText = function()
+    {
+        document.querySelector('h1').innerText = "Best JS series"
+    }
+    const changeMe = setTimeout(changeText, 2000)
+
+    //Above code shows that the text will be changed after 2sec and below code shows that if we click the button before 2sec then their text will be not change
+    document.querySelector('#stop').addEventListener('click', ()=>{
+        clearTimeout(changeMe)
+        console.log("STOPPED")
+    });
+</script>
+</html>

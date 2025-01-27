@@ -1,0 +1,11 @@
+body{
+    background-color: #212121;
+    color: #fff;
+}
+
+#start, #stop{
+    height: 30px;
+    width: 70px;
+    font-size: 15px;
+    cursor: pointer;
+}

@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.upper, .lower {
+    height: 50%;
+    width: 100%;
+}
+
+.upper {
+    background-color: rgb(221, 196, 3);
+}
+
+.lower {
+    background-color: rgb(5, 108, 218);
+}
+
+.list{
+    position: absolute;
+    left: 33%;
+    top: 15%;
+    height: 130px;
+    width: 400px;
+    background-color: #d4dfdf;
+    border-radius: 15px;
+}
+
+.list:hover{
+    box-shadow: 1px 1px 10px #212121;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.button{
+    position: relative;
+    left: 70%;
+    top: 20%;
+    height: 40px;
+    width: 90px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(5, 108, 218);
+    border: 0px;
+    color: #fff;
+}
+
+.button:hover{
+    box-shadow: 0.5px 0.5px 5px black;
+    transition: box-shadow 0.5s ease 0.2s;
+}
+
+input[type="text"]{
+    position: absolute;
+    top: 22%;
+    left: 10%;
+    height: 35px;
+    width: 200px;
+    padding: 5px;
+    text-align: center;
+    background-color: #d4dfdf;
+    border: none; 
+    border-bottom: 2px solid  rgb(5, 108, 218);
+    outline: none; 
+    font-size: 20px;
+}
+
+.remainingTasks{
+    position: relative;
+    top: 28%;
+    left: 10%;
+    font-size: 17px;
+}
+
+.message-box {
+    position: absolute;
+    top: 3%;
+    left: 30%;
+    height: 50px;
+    width: 500px;
+    background-color: #d4dfdf;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(42, 43, 45);
+    margin-bottom: 10px;
+    border-radius: 20px ;
+}
+
+.tasks {
+    position: relative;
+    background-color: #fff;
+    color: #212121;
+    padding: auto;
+    text-align: center;
+}
+
+.newButton {
+
+}

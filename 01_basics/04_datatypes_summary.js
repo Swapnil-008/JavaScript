@@ -6,6 +6,10 @@
 
 // Symbol
 
+let num = BigInt(65496416418654169n)
+
+console.log(typeof num)
+
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
@@ -22,6 +26,11 @@ const myObj = {
     name: "Swapnil",
     age: 21,
     branch: "IT"
+}
+
+function myFun1()
+{
+    console.log("Hello")
 }
 
 const myFun = function()

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bind</title>
+</head>
+<body>
+    <button>Button Clicked</button>
+</body>
+<script>
+    class React
+    {
+        constructor()
+        {
+            this.library = "React"
+            this.server = "https://localhost:5050"
+            document.querySelector('Button').addEventListener('click', this.handleClick.bind(this))  // with this line now in clicking button it will give the reference of class react also
+        }
+        handleClick()
+        {
+            console.log("Button clicked!")
+            console.log(this)
+        }
+    }
+    const user = new React()
+    
+</script>
+</html>

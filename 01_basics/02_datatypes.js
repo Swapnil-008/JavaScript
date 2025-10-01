@@ -1,4 +1,4 @@
-// alert(3 + 3) // because we are using nodejs, not browsers console
+// alert(3 + 3) // because we are using nodejs, not browser's console
 
 // Datatypes
 
@@ -9,5 +9,7 @@
 // null => representation of empty value
 // undefined => which is not defined yet
 
+let obj = null;
+console.log(typeof obj) // object
 console.log(typeof null) // object
 console.log(typeof undefined) // undefined

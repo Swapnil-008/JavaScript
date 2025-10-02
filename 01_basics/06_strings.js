@@ -4,19 +4,20 @@ let name = "Swapnil"
 let rollNo = 33176
 // console.log(name + " : " + rollNo )  // Outdated 
 
-// Instead of above syntax we have to prefer `` that's call backtick's 
+// Instead of this above syntax, we should prefer `` (that's call backticks)
 
-console.log(`My name is ${name} and my Roll number is ${rollNo}`)
+console.log(`My name is ${name} and my Roll No. is ${rollNo}`)
 
 // Methods or functions of string
-// These all methods does not make changes in original string, because string is an primitive datatype
+// These all methods do not make changes in original string, because string is an primitive datatype
 const myStr = new String("Desperate")
 
 console.log(myStr.length);  //9
 console.log(myStr.charAt(2));  //s
+console.log(myStr.indexOf('t'))
 console.log(myStr.toUpperCase())  //DESPERATE
 console.log(myStr.substring(0, 5)) //Despe
-console.log(myStr.slice(-7, -1))  //sperat
+console.log(myStr.slice(-7, -1))  //sperat  //negative indexing allowed
 
 let newStr = "hello-world-all"
 console.log(newStr.split('-')) // [ 'hello', 'world', 'all' ]
@@ -25,3 +26,6 @@ console.log(newStr)
 console.log(`${newStr.trimStart()}  ${newStr.trimStart().length}`); //hello           14
 console.log(`${newStr.trimEnd()}  ${newStr.trimEnd().length}`);  //                 hello  22
 console.log(newStr.trim())  // hello
+newStr = "hello-world-all"
+console.log(newStr.replaceAll('-', ' '))
+console.log(newStr.includes('world--'))

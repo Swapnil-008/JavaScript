@@ -1,7 +1,7 @@
 // Dates
 
 let myDate = new Date()
-
+console.log(myDate)
 // console.log(myDate.toDateString()) //Tue Jan 21 2025
 // console.log(myDate.toISOString())  //2025-01-21T19:23:52.395Z
 // console.log(myDate.toJSON()) //2025-01-21T19:23:52.395Z

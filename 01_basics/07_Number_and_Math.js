@@ -3,7 +3,7 @@ const nextScore = new Number(400)
 console.log(score);  //100
 console.log(nextScore);  //[Number: 400]
 
-console.log(nextScore.toLocaleString()) // gives 400 in string, so we can apply all the properties of string on that
+console.log(nextScore.toLocaleString()) // or toString() is also same // gives 400 in string, so we can apply all the properties of string on that
 
 console.log(nextScore.toFixed(2))  // gives 2 digits after decimal
 

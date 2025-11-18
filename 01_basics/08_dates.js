@@ -12,6 +12,8 @@ let myDate = new Date()
 let myCreatedDate = new Date("01-22-2025")
 console.log(myCreatedDate.toDateString())
 
+//from January-1-1970,       Date.now() gives milliseconds'
+
 console.log(Math.floor(Date.now() / 1000)) // seconds
 console.log(Math.floor(Date.now() / 1000 / 60)) // minutes
 console.log(Math.floor(Date.now() / 1000 / 60 / 60 )) //houres

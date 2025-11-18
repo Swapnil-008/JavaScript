@@ -45,7 +45,7 @@ console.log(typeof("1" + 2))  //String
 console.log(1 + "2") // 12
 console.log("1" + 2 + 2) // 122
 console.log(1 + 2 + "2") // 32
-console.log( 3 + 4 * 5 % 3) // This is not a correct way to write a code
+console.log( 3 + 4 * 5 % 3) // 5 // This is not a correct way to write a code
 // if we are using multipe operators in a single equation then must use brackets to perform the operations
 
 

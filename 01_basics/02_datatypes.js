@@ -13,3 +13,6 @@ let obj = null;
 console.log(typeof obj) // object
 console.log(typeof null) // object
 console.log(typeof undefined) // undefined
+
+const id = Symbol("swapnil")
+console.log(id)

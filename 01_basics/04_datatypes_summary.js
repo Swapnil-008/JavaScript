@@ -20,7 +20,7 @@ console.log(id, "  ", anotherId); // Symbol(123)    Symbol(123)
 
 // Arrays, Objects, Functions
 
-const dataStructures = ["Array", "String", "Linked List", "Stack", "Queue", "Tree", "Graph"]
+const dataStructures = ["Array", "String", "Linked_List", "Stack", "Queue", "Tree", "Graph"]
 
 const myObj = {
     name: "Swapnil",

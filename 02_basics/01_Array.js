@@ -2,16 +2,25 @@
 
 const myArr = [10, 20, 30, 40, 50]
 // console.log(myArr[2]) // 30
+// console.log(myArr.splice(3, 1)) // [ 40 ]  // removes element from index 3, 1 is number of elements to be removed
+// console.log(myArr) // [ 10, 20, 30, 50 ]
 
 const heroes = ["Shaktiman", "Nagraj", "Krish"]
 // console.log(heroes[1]) // Nagraj
+const arr = new Array(5)
+// console.log(arr) // [ <5 empty items> ]
+arr[0] = 1
+arr[2] = 2
+arr[4] = 3
+console.log(arr) // [ 1, <1 empty item>, 2, <1 empty item>, 3 ]
+
 
 const myArr2 = new Array(1, 2, 3, 4, 5)
 // console.log(myArr2) // [ 1, 2, 3, 4, 5 ]
 
-// myArr2.push(10) // Adding to in backside of myArr2
+// myArr2.push(10) // Adding element in backside of myArr2
 // myArr2.pop() // Removing element from backside of myArr2
-// myArrr2.unshift(0) // Adding to in frontside of myArr2
+// myArrr2.unshift(0) // Adding element from front of myArr2 // while adding element from front side all the indexes will be shifted by 1
 // myArr2.shift() // Removing element from frontside of myArr2
 
 // console.log(myArr2.includes(10)) // return -1, as 10 is not found in myArr2

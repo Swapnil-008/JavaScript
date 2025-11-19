@@ -1,15 +1,13 @@
 // Immediately invoked function expressions (IIFE)
 
 // this function is IIF because of not affecting from a pollution of global scope
-(function chai()
-{
+(function chai(){
     console.log(`DB CONNECTED`)
 })();
 
 // but as this function do not have idea where it have to stop that's why we have to add semicolan after ending of a function
 
-(function aurCode()
-{
+(function aurCode(){
     console.log(`DB CONNECTED TWO`)
 })();
 
@@ -22,3 +20,4 @@ chaiAurCode();
 ( (name) => {
     console.log(`DB CONNECTED BY ${name}`)
 })("SWAPNIL");
+// here we have passed argument to IIFE arrow function

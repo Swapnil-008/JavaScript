@@ -9,7 +9,7 @@ if(true)
 
 // console.log(a);  // undefined 
 // console.log(b);  // undefined 
-// console.log(c);  // 30 // because var is accessible outside the block also that's why we don't use var
+// console.log(c);  // 30 // because var is accessible outside the block and that's why we don't use var
 
 let a = 300
 if(true)
@@ -29,28 +29,28 @@ if(true)
 
 // The global scope which we have on console of browser is different from the global scope we are using on node // importet for interview, lecture 21 in ending 2 min
 
-function one(){
+function one()
+{
     const username = "hitesh"
-
-    function two(){
+    function two()
+    {
         const website = "youtube"
         console.log(username);
     }
     // console.log(website);  // it will generate error as used website outside the block of function two
-
-     two()
-
+    two()
 }
-
 // one()
 
-if (true) {
+if (true)
+{
     const username = "hitesh"
-    if (username === "hitesh") {
+    if (username === "hitesh")
+    {
         const website = " youtube"
         // console.log(username + website);
     }
-    // console.log(website);  // it will generate error as website used outside the block of inner if statement
+    // console.log(website);  // it will generate error as website used outside the block of inner 'if' statement
 }
 
 // console.log(addOne(5));

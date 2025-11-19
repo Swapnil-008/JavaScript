@@ -14,8 +14,8 @@ function addTwoNumbers(number1, number2)
 }
 const result = addTwoNumbers(5, 6)
 // console.log("Result: ", result)
-// function having parameter but not passed any argument
 
+// function having parameter but not passed any argument
 function loggedIn(name)
 {
     return `${name} just logged in.`

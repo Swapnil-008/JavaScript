@@ -16,7 +16,7 @@ const user = {
 // user.welcomeMessage()
 // console.log(this)  // {} give empty object
 
-// but on console of browser this above statement gives an **window object
+// but on console of browser this above statement gives a **window object
 
 // function chai()
 // {
@@ -31,7 +31,7 @@ const user = {
 // }
 
 // chai();  // it also gives lots of data
-
+// this doesn't work in function, it only works inside object
 // Arrow function
 
 const chai = () => {
@@ -40,10 +40,14 @@ const chai = () => {
 // chai();   {}  this gives an empty object inside arrow function 
 
 // Implicit return
-const addTwoNum = (num1, num2) => (num1 + num2) // here return keyword is required 
+const addTwoNum = (num1, num2) => (num1 + num2) // here return keyword is not required 
 // console.log(addTwoNum(5, 4)) // 9
+
+// const addTwoNum = (num1, num2) => {  // Curly bracket -> use return keyword
+//     return num1 + num2;
+// }
 
 // for returning object in above way we have to use curly bracktes inside parentesis
 
 const returnObject = () => ({username: "swapnil"})
-console.log(returnObject());  // { username: 'swapnil' }
+// console.log(returnObject());  // { username: 'swapnil' }
